@@ -1,0 +1,106 @@
+tr, td, table{
+    border: "0";
+    padding: 0px;
+    margin: 0px;
+    border-spacing: 0px;
+}
+
+img {
+    width: 50px;
+    height: 50px;
+}
+
+img.stack{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+/*
+    General Structure
+*/
+.sidebar {
+    width: 200px;
+    border: 0px solid black;
+}
+
+#left {
+    float: left;
+}
+
+#right {
+    float: right;
+}
+
+#contents {
+    margin-left: 210px;
+    margin-right: 210px;
+}
+
+
+button {
+  background-color: #fff000;
+  border-radius: 12px;
+  color: #000;
+  cursor: pointer;
+  font-weight: normal;
+  padding: 10px 15px;
+  text-align: center;
+  transition: 200ms;
+  font-weight: 600;
+  box-sizing: border-box;
+  border: 0;
+  font-size: 12px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+button:not(:disabled):hover,
+button:not(:disabled):focus {
+  outline: 0;
+  background: #f4e603;
+  box-shadow: 0 0 0 2px rgba(0,0,0,.2), 0 3px 8px 0 rgba(0,0,0,.15);
+}
+
+button:disabled {
+  filter: saturate(0.2) opacity(0.5);
+  -webkit-filter: saturate(0.2) opacity(0.5);
+  cursor: not-allowed;
+}
+
+
+
+
+/*
+    Course List
+*/
+ul#courses {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+#courses li {
+    float: left;
+    width: 80;
+}
+#courses li a {
+    display: block;
+    padding: 3px;
+    text-decoration: none;
+}
+#courses li a:hover {
+    background-color: yellow;
+}
+
+tr.header {
+    font-weight: bold;
+}
+tr.offerings {
+    cursor: pointer;
+}
+tr.offerings:hover {
+    background-color: yellow;
+}
